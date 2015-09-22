@@ -14,6 +14,7 @@ All notable changes to this project starting with the 0.6.0 release will be docu
 - Makes API calls to host 'dashboard.pantheon.io' instead of 'dashboard.getpantheon.com' (#508)
 - `site deploy` limited to test or live environment. --from removed. --clone-live-content changed to --sync-content (#463)
 - Changed parameter `--env` on `site create-env` to `--to-env` (#514)
+- `site import` is now `site import-content` and the --element parameter only accepts "files" and "database" (#516)
 
 ###Added
 - `site set owner --site=<site> --set=<owner>` sets the site owner to the given user ID. (#499)
