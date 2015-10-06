@@ -95,7 +95,7 @@ class Auth_Command extends TerminusCommand {
   /**
    * Find out what user you are logged in as.
    */
-  public function whoami() {
+  public function whoami($args,$assoc_args) {
     if (Session::getValue('email')) {
       $this->output()->outputValue(Session::getValue('email'), "You are authenticated as");
     }
